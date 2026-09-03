@@ -4,16 +4,23 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src/index.js",
+    "dev": "npx nodemon src/index.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "type": "module",
   "dependencies": {
-    "body-parser": "^2.3.0",
+    "@clerk/express": "^2.1.66",
+    "@supabase/supabase-js": "^2.114.0",
+    "axios": "^1.20.0",
+    "cors": "^2.8.6",
     "dotenv": "^17.4.2",
-    "express": "^5.2.1"
+    "express": "^5.2.1",
+    "multer": "^2.3.0",
+    "resend": "^6.25.0"
   },
   "devDependencies": {
     "nodemon": "^3.1.14"
