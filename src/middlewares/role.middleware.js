@@ -5,10 +5,12 @@ export const requireRole = (...roles) => {
         if (!userRole || !roles.includes(userRole)) {
             return res.status(403).json({
                 success: false,
-                message: "Forbidden: Insufficient permissions"
+                data: null,
+                error: "Forbidden: Insufficient permissions"
             });
         }
 
+        req.userRole = userRole;
         next();
     };
 };
