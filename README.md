@@ -21,7 +21,7 @@ This is the core backend API for SIH26043, built with Node.js + Express using a 
 | Auth | Clerk (JWT, 4 roles) |
 | File Storage | Supabase Storage |
 | Email | Resend |
-| ML Integration | Python + FastAPI (external service) |
+| ML Integration | Python + FastAPI (external service) V1|
 
 ---
 
@@ -204,10 +204,10 @@ Authorization: Bearer <clerk_jwt_token>
 | Name | Role |
 |---|---|
 | Argha | Core backend — Express, Supabase, Clerk, deployment |
-| Assistant | Supporting backend — notifications, milestones, file uploads |
-| ML Guy | FastAPI ML service (`/categorize`, `/deduplicate`) |
-| Frontend Duo | React UI via v0/Bolt |
-| Docs Person | PPT, demo script, API documentation |
+| Nibedita | Supporting backend — notifications, milestones, file uploads |
+| Pradipta | FastAPI ML service (`/categorize`, `/deduplicate`) |
+| Aditya, Soumili | React UI via v0/Bolt |
+| Baibhab | PPT, demo script, API documentation |
 
 ---
 
@@ -225,4 +225,4 @@ Authorization: Bearer <clerk_jwt_token>
 
 ## License
 
-Government of Jharkhand / Smart India Hackathon 2026. Internal use only.
+Government of Jharkhand / Smart India Hackathon 2026. Internal use only, for development purpose
